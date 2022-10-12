@@ -12,7 +12,7 @@ export default abstract class ResponsiveComponent extends Component<
   ResponsiveComponentProps,
   ResponsiveComponentState
 > {
-  listener = undefined;
+  listener: any = undefined;
   state = {
     window: Dimensions.get("window"),
   };
