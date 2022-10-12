@@ -11,7 +11,7 @@ const useDimensions = () => {
   }) => setDimensions({ width, height, scale, fontScale });
 
   useEffect(() => {
-    const listener = Dimensions.addEventListener("change", onChange);
+    const listener: any = Dimensions.addEventListener("change", onChange);
     return () => listener.remove();
   }, []);
 
